@@ -59,8 +59,8 @@ function celsiusTilFahrenheit(celsius) {
 //     Returner summen av alle tallene i en array. Bruk en for-løkke.
 
 function sum(tall) {
-  int tall[] = {3, 7, 6, 2, 3};
-  int sum = 0;
+  let tall = (3, 7, 6, 2, 3);
+  let sum = 0;
   for (int i = 0; i < tall.length; i++) {
   sum += tall[i];
 
@@ -70,9 +70,11 @@ function sum(tall) {
 // Oppgave 5: Returner gjennomsnittet av tallene. Gjenbruk sum()!
 
 function gjennomsnitt(tall) {
-  int tall[] = {3, 7, 6, 2, 3};
+  let tall = (3, 7, 6, 2, 3);
+  let sum = 0;
 
   float avg, sum = 0;
+  
 }
 
 // Oppgave 6: Hvor mange dager med kuldegrader var det? (Trenger du vinterdekk?)
