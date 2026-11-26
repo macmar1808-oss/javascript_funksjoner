@@ -1,3 +1,5 @@
+
+
 // =====================================================
 // Oppgaver: Funksjoner
 //
@@ -61,8 +63,8 @@ function celsiusTilFahrenheit(celsius) {
 function sum(tall) {
   let tall = (3, 7, 6, 2, 3);
   let sum = 0;
-  for (int i = 0; i < tall.length; i++) {
-  sum += tall[i];
+  for (let i = 0; i < tall.length; i++) {
+  sum += i;
 
   System.out.println(sum)
 } }
@@ -73,15 +75,25 @@ function gjennomsnitt(tall) {
   let tall = (3, 7, 6, 2, 3);
   let sum = 0;
 
-  float avg, sum = 0;
+  for (let i = 0; i < tall.length; i++) {
+    sum += i;
+    gjennomsnitt = sum/tall.length;
+  }
   
-}
+  System.out.println(gjennomsnitt)
+} // I rewrote everything for some reason idk
 
 // Oppgave 6: Hvor mange dager med kuldegrader var det? (Trenger du vinterdekk?)
 //     Returner HVOR MANGE tall som er under 0. Bruk for-løkke + if.
+
 function antallUnderNull(tall) {
-  // LØSNING
-}
+  let tall = (3, 7, 6, 2, 3);
+  HashMap() freq(tall) = new HashMap()
+
+  for (let i = 0; i < tall.length; i++) {
+
+  }
+} //Jeg ville gjøre det uten å importe, men jeg fikk ikke det til
 
 
 // ---------- RØD ----------
