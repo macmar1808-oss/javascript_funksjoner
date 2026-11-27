@@ -88,34 +88,73 @@ function gjennomsnitt(tall) {
 
 function antallUnderNull(tall) {
   let tall = (3, 7, 6, 2, 3);
-  HashMap() freq(tall) = new HashMap()
 
-  for (let i = 0; i < tall.length; i++) {
-
+  for (char; ch = tall.toCharArray;) {
+    if (tall < 0) {
+      System.out.println(ch)
+    }
+    
   }
-} //Jeg ville gjøre det uten å importe, men jeg fikk ikke det til
+} //probs dont work but idk its the best i got
 
 
 // ---------- RØD ----------
 
 // Oppgave 7: Hva var den varmeste dagen? Samme logikk som en highscore-liste.
 //     Returner det største tallet i arrayen – UTEN Math.max og UTEN .sort()
+
 function storste(tall) {
-  // LØSNING
-}
+  let tall = (3, 7, 6, 2, 3);
+  let maxValue = 0;
+
+  for (char; ch = tall.toCharArray;) {
+    if (tall > 0) {
+      System.out.println(maxValue)
+    }
+  }
+} //Hope, hope, hope this works, gyulp
 
 // Oppgave 8: Returner en NY array med bare kuldegradene (tall under 0).
 //     Den opprinnelige arrayen skal ikke endres.
-function bareKuldegrader(tall) {
-  // LØSNING
-}
+
+function bareKuldegrader(tall1) {
+  let tall1 = (-2, -2, -1, 0, 0);
+  const limit = 0;
+
+  for (char; ch = tall1.toCharArray;) {
+    if (tall1 < limit) {
+      System.out.println(tall1 - tall1 > limit)
+    } else {
+      System.out.println("Ingen tall er under 0 grader i denne frekvensen.")
+    }
+  }
+} // Det kan hende at dette er litt ute av det, men jeg ville ikke gjøre flere if statements (Jeg tror at jeg kanskje misforsto det med arrayen,
+// men uansett om du endrer variablene så burde det fortsatt funke)
+
 
 // Oppgave 9: Sorter tallene fra lavest til høyest – UTEN .sort().
 //     Lag din egen sorteringsalgoritme (f.eks. boblesortering).
 //     Returner en NY array, ikke endre den opprinnelige.
+
 function sorterStigende(tall) {
-  // LØSNING
-}
+  let tall = (3, 7, 6, 2, 3);
+
+  for (let i = 0; i < tall.length; i++) {
+    for (let j = i + 1; j < tall.length - 1; j++) {
+        swapped = false; 
+        for (let j = 0; j < tall.length - 1 - i; j++) {
+            if (tall(j) > tall(j + 1)) { 
+                let ell = tall(j);
+                arr(j) = tall(j + 1);
+                arr(j + 1) = ell; 
+                swapped = true;
+        }
+    }
+    if (!swapped) break;
+    System.out.println() 
+  }
+
+} } //Jeg brukte bubble sorting siden når jeg søkte så sa det at det var den enkleste
 
 
 // #####################################################
@@ -132,7 +171,11 @@ const runder = [120, 85, 140, 95, 110];
 // skal inkluderes i brukernavnet. Vi får da: Gamertag = navn + tall.
 //     lagGamertag("Ola", 99) -> "Ola99"
 function lagGamertag(navn, tall) {
-  // LØSNING
+  navn = "Ola";
+  tall = 99;
+
+  Gamertag = navn + tall;
+  System.out.println(Gamertag) 
 }
 
 
@@ -140,8 +183,18 @@ function lagGamertag(navn, tall) {
 //     erGammelNok(16, 18) -> false
 //     erGammelNok(18, 18) -> true
 //     Tips: return alder >= grense;  (sammenligningen gir true/false)
+
 function erGammelNok(alder, grense) {
-  // LØSNING
+  alder = 13; //Jeg tok bare et random tall
+
+    Math.max = 17; {
+      System.out.println(erGammelNok = false)
+    }
+
+    Math.min = 18; {
+      System.out.println(erGammelNok = true)
+    }
+  
 }
 
 // Oppgave 12: BreiLAN innfører billettpriser. VG1 betaler 100 kr og resten av skolen 150 kr.
@@ -150,7 +203,7 @@ function erGammelNok(alder, grense) {
 //     billettpris(false) -> 150
 //     Tips: bruk if og else.
 function billettpris(erVG1) {
-  // LØSNING
+  
 }
 
 
