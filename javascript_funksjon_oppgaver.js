@@ -145,8 +145,8 @@ function sorterStigende(tall) {
         for (let j = 0; j < tall.length - 1 - i; j++) {
             if (tall(j) > tall(j + 1)) { 
                 let ell = tall(j);
-                arr(j) = tall(j + 1);
-                arr(j + 1) = ell; 
+                ell(j) = tall(j + 1);
+                ell(j + 1) = ell; 
                 swapped = true;
         }
     }
@@ -202,33 +202,74 @@ function erGammelNok(alder, grense) {
 //     billettpris(true)  -> 100
 //     billettpris(false) -> 150
 //     Tips: bruk if og else.
+
 function billettpris(erVG1) {
-  
+const klasser = [VG1, VG2, VG3]
+
+  Math.max = VG1; {
+    System.out.println("100 kr")
+  } 
+  Math.min = VG2; {
+    System.out.println("150 kr")
+  }
+  Math.min = VG3; {
+    System.out.println("150 kr")
+  }
 }
 
 
 // ---------- GUL ----------
 
-// Oppgave 13: Blizzard ønsker at fraksjonene fordeles likt så mulig for å unngå at en fraksjon tar overhånd,
-// dette er særlig viktig på PvP-servere. Lag en funksjon som sjekker dette når brukeren lager en ny karakter.
-// Funksjonen skal returnere feilmeldingen "The faction is currently unavailable on this ruleset due to population imbalance"
-// hvis det er en overvekt av en fraksjon på serveren. Ellers returnerer den "Welcome to the <fraksjon>!"
+// Oppgave 13: Blizzard ønsker at fraksjonene (sånn i hver sivilisasjon) fordeles 
+// likt så mulig for å unngå at en fraksjon tar overhånd,
+// dette er særlig viktig på PvP-servere. Lag en funksjon 
+// som sjekker dette når brukeren lager en ny karakter.
+// Funksjonen skal returnere feilmeldingen "The faction is currently unavailable 
+// on this ruleset due to population imbalance"
+// hvis det er en overvekt av en fraksjon på serveren. 
+// Ellers returnerer den "Welcome to the <fraksjon>!"
 // Overvekt betyr at fraksjonen spilleren velger har MER enn 50 % av spillerne.
-//     velgFraksjon(5000, 5000, "Horde")    -> "Welcome to the Horde!"
+//     velgFraksjon(5000, 5000, "Horde")    -> "Welcome to the Horde!" (Er dette bare forslag???)
 //     velgFraksjon(4500, 5500, "Alliance") -> "Welcome to the Alliance!"
-//     velgFraksjon(4500, 5500, "Horde")    -> "The faction is currently unavailable on this ruleset due to population imbalance"
-//
+//     velgFraksjon(4500, 5500, "Horde")    -> "The faction is currently 
+//      unavailable on this ruleset due to population imbalance"
 //     Tips: andel = antall i valgt fraksjon / totalt * 100
+
 function velgFraksjon(alliance, horde, valg) {
-  // LØSNING
+  let Horde = [5000]
+  let Alliance = [4700]
+
+  Math.max = Horde < 5500; {
+    System.out.println("Welcome to the Horde!")
+  }
+
+  Math.max = Horde > 5500; {
+    System.out.println("The faction is currently unavailable on this ruleset due to population imbalance")
+  }
+
+  Math.max = Alliance < 5500; {
+    System.out.println("Welcome to the Alliance!")
+  }
+
+    Math.max = Alliance > 5500; {
+    System.out.println("The faction is currently unavailable on this ruleset due to population imbalance")
+  }
 }
 
 // Oppgave 14: Hvor mange runder fikk laget MER enn grensen?
 //     antallOver(runder, 100) -> 3
 //     Tips: samme oppskrift som antallUnderNull() i oppgave 6.
 function antallOver(poeng, grense) {
-  // LØSNING
-}
+  let poeng = (3, 7, 6, 2, 3);
+
+  for (char; ch = poeng.toCharArray;) {
+    if (poeng < 0) {
+      System.out.println(ch)
+    }
+    
+  }
+} //De sa at det var samme oppskrift som oppgave seks, jeg håper at dette funker
+
 
 
 // #####################################################
@@ -278,8 +319,35 @@ const resultater = [
 //     Hent grensen fra objektet: aldersgrenser[spill]
 //     kanDelta(16, "GTA 6")    -> false
 //     kanDelta(16, "Fortnite") -> true
+
 function kanDelta(alder, spill) {
-  // LØSNING
+  alder = 15;
+
+  const aldersgrenser = {
+  "GTA 6": 18,
+  "CS2": 18,
+  "Fortnite": 12,
+  "WoW Forever": 12,
+  "Minecraft": 7,
+  };
+
+
+  if (alder < 18 + aldersgrenser >= 18) {
+    System.out.println(kanDelta = false)
+    } //for GTA and CS2
+
+  if (alder >= 18 + aldersgrenser <= 18) {
+    System.out.println(kanDelta = true)
+    } //for GTA and CS2
+
+  if (alder < 12 + aldersgrenser >= 12) {
+    System.out.println(kanDelta = false)
+  } //for Fortnite and WoW Forever
+
+  if (alder >= 12 + aldersgrenser <= 12) {
+    System.out.println(kanDelta = true)
+  } //for Fortnite and CS2
+
 }
 
 
@@ -289,8 +357,29 @@ function kanDelta(alder, spill) {
 //     Gjenbruk billettpris() fra oppgave 12! deltakere[i].vg1 er true eller false.
 //     totalInntekt(deltakere) -> 700
 function totalInntekt(deltakere) {
-  // LØSNING
-}
+  const klasser = [VG1, VG2, VG3]
+
+  const VG1antall = 4;
+  const VG2antall = 1;
+  const VG3antall = 1;
+
+  Math.max = VG1; {
+    System.out.println("100 kr")
+  } 
+  Math.min = VG2; {
+    System.out.println("150 kr")
+  }
+  Math.min = VG3; {
+    System.out.println("150 kr")
+  }
+
+  const VG1pris = VG1antall * VG1;
+  const VG2pris = VG2antall * VG2;
+  const VG3pris = VG3antall * VG3;
+
+  System.out.println("totalInntekt(deltakere ->", VG1pris + VG2pris + VG3pris)
+
+} // totalInntekt = 700;
 
 
 // ---------- RØD ----------
@@ -300,8 +389,27 @@ function totalInntekt(deltakere) {
 //     UTEN .sort(). Arrayen resultater skal ikke endres.
 //     toppTre(resultater) -> ["Kari", "Jonas", "Ali"]
 function toppTre(resultater) {
-  // LØSNING
-}
+  toppTre = ["Kari", "Jonas", "Ali"]
+
+  const Kari = 1;
+  const Jonas = 2;
+  const Ali = 3;
+
+  for (let i = 0; i < toppTre.length; i++) {
+  for (let j = i + 1; j < toppTre.length - 1; j++) {
+      swapped = false; 
+      for (let j = 0; j < toppTre.length - 1 - i; j++) {
+         if (toppTre(j) > toppTre(j + 1)) { 
+              let ell = toppTre(j);
+                ell(j) = toppTre(j + 1);
+                ell(j + 1) = ell; 
+                swapped = true;
+      }
+    }
+    if (!swapped) break;
+    System.out.println() 
+
+  } } }
 
 
 
@@ -313,5 +421,8 @@ function toppTre(resultater) {
 //
 // Skriv en kort egenvurdering av arbeidet ditt. Skriv rett etter kolonet.
 // Dette fikk jeg godt til:
+// Jeg fikk gått til med if statemendene.
 // Dette var vanskelig:
+// Matten og sorterings-algoritmenene.
 // Dette vil jeg øve mer på:
+// Sortering, matte-funksjoner og å lage lengre funksjoner. Også å huske å spørre om hjelp fra lærerene
